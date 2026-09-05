@@ -1,7 +1,4 @@
-def main():
-    print("Hello from termansi!")
-
-
+class Termansi:
     FG_RED = "\033[31m"
     FG_GREEN = "\033[32m"
     FG_BLUE = "\033[34m"
@@ -62,21 +59,31 @@ def main():
     SET_ITALIC = "\033[3m"
     SET_RESET_ITALIC = "\033[23m"
 
-    print(f"{FG_RED}This is red text{COLOR_RESET}")
-    print(f"{FG_GREEN}This is green text{COLOR_RESET}")
-    print(f"{FG_BLUE}This is blue text{COLOR_RESET}")
-    print(f"{FG_BLACK}This is black text{COLOR_RESET}")
-    print(f"{FG_WHITE}This is white text{COLOR_RESET}")
-    print(f"{FG_YELLOW}This is yellow text{COLOR_RESET}")
-    print(f"{FG_CYAN}This is cyan text{COLOR_RESET}")
-    print(f"{FG_MAGENTA}This is magenta text{COLOR_RESET}")
-    print(f"{SET_BOLD}This is bold text{COLOR_RESET}")
-    print(f"{SET_UNDERLINE}This is underlined text{COLOR_RESET}")
-    print(f"{SET_INVERSE}This is inverse text{COLOR_RESET}")
-    print(f"{SET_BLINK}This is blinking text{COLOR_RESET}")
-    print(f"{SET_HIDDEN}This is hidden text{COLOR_RESET}")
-    print(f"{SET_STRIKETHROUGH}This is struckthrough text{COLOR_RESET}")
-    print(f"{SET_ITALIC}This is italic text{COLOR_RESET}")
+def main():
+    print("Hello from termansi!")
+    hello = f"{Termansi.FG_RED}Hello{Termansi.COLOR_RESET}"
+    print(hello)
+    test_print_colors()
+
+
+    
+
+def test_print_colors():
+    print(f"{Termansi.FG_RED}This is red text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.FG_GREEN}This is green text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.FG_BLUE}This is blue text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.FG_BLACK}This is black text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.FG_WHITE}This is white text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.FG_YELLOW}This is yellow text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.FG_CYAN}This is cyan text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.FG_MAGENTA}This is magenta text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.SET_BOLD}This is bold text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.SET_UNDERLINE}This is underlined text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.SET_INVERSE}This is inverse text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.SET_BLINK}This is blinking text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.SET_HIDDEN}This is hidden text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.SET_STRIKETHROUGH}This is struckthrough text{Termansi.COLOR_RESET}")
+    print(f"{Termansi.SET_ITALIC}This is italic text{Termansi.COLOR_RESET}")
 
 
 if __name__ == "__main__":
