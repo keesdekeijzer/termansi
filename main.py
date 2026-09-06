@@ -64,9 +64,8 @@ def main():
     hello = f"{Termansi.FG_RED}Hello{Termansi.COLOR_RESET}"
     print(hello)
     test_print_colors()
+    test_print_background_colors()
 
-
-    
 
 def test_print_colors():
     print(f"{Termansi.FG_RED}This is red text{Termansi.COLOR_RESET}")
@@ -85,6 +84,16 @@ def test_print_colors():
     print(f"{Termansi.SET_STRIKETHROUGH}This is struckthrough text{Termansi.COLOR_RESET}")
     print(f"{Termansi.SET_ITALIC}This is italic text{Termansi.COLOR_RESET}")
 
+
+def test_print_background_colors():
+    print(f"{Termansi.BG_RED}This is red background{Termansi.COLOR_RESET}")
+    print(f"{Termansi.BG_GREEN}This is green background{Termansi.COLOR_RESET}")
+    print(f"{Termansi.BG_BLUE}This is blue background{Termansi.COLOR_RESET}")
+    print(f"{Termansi.BG_BLACK}This is black background{Termansi.COLOR_RESET}")
+    print(f"{Termansi.BG_WHITE}This is white background{Termansi.COLOR_RESET}")
+    print(f"{Termansi.BG_YELLOW}This is yellow background{Termansi.COLOR_RESET}")
+    print(f"{Termansi.BG_CYAN}This is cyan background{Termansi.COLOR_RESET}")
+    print(f"{Termansi.BG_MAGENTA}This is magenta background{Termansi.COLOR_RESET}")
 
 if __name__ == "__main__":
     main()
